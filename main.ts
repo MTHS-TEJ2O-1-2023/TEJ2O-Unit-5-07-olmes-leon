@@ -1,15 +1,15 @@
-/* Copyright (c) 2020 MTHS All rights reserved
+/* Copyright (c) 2023 MTHS All rights reserved
  *
- * Created by: Mr. Coxall
- * Created on: Sep 2020
- * This program ...
+ * Created by: Olmes
+ * Created on: Nov 2023
+ * This program moves a servo
 */
 
 // variables
 const servoNumber1 = robotbit.Servos.S1
 
 // setup
-basic.showIcon(IconNames.Happy)
+basic.showIcon(IconNames.Silly)
 
 input.onButtonPressed(Button.A, function () {
   robotbit.Servo(servoNumber1, 0)
@@ -17,7 +17,7 @@ input.onButtonPressed(Button.A, function () {
   basic.showString('0')
   basic.showIcon(IconNames.SmallSquare)
   basic.clearScreen()
-  basic.showIcon(IconNames.Happy)
+  basic.showIcon(IconNames.Duck)
 })
 
 input.onButtonPressed(Button.B, function () {
@@ -26,14 +26,14 @@ input.onButtonPressed(Button.B, function () {
   basic.showString('180')
   basic.showIcon(IconNames.SmallSquare)
   basic.clearScreen()
-  basic.showIcon(IconNames.Happy)
+  basic.showIcon(IconNames.Duck)
 })
 
 input.onButtonPressed(Button.AB, function () {
-  robotbit.Servo(servoNumber1, 60)
+  robotbit.Servo(servoNumber1, 90)
   basic.clearScreen()
-  basic.showString('60')
+  basic.showString('90')
   basic.showIcon(IconNames.SmallSquare)
   basic.clearScreen()
-  basic.showIcon(IconNames.Happy)
+  basic.showIcon(IconNames.Duck)
 })
